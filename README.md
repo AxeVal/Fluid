@@ -1,8 +1,8 @@
-# University upprpo project about simulation incompressible fluid
+University upprpo project about simulation incompressible fluid
 
-Powered by NumFOCUS
+Powered by AxeVal
 
-# Team:
-# Pavel    21932
-# Ivan     21933
-# Valentin 21933
+Team:
+Pavel    21932
+Ivan     21933
+Valentin 21933
