@@ -2,11 +2,10 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/numpy/numpy-original.svg" width="30"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/pycharm/pycharm-original.svg" width="30"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" width="30"/>
-  <img src="" width="30"/>
 </div>
 
 <div id="header" align="center">
-  <img src="https://media.giphy.com/media/xTiN0GCrD3iqO4CRZm/giphy.gif" width="100"/>
+  <img src="https://media.giphy.com/media/xTiN0GCrD3iqO4CRZm/giphy.gif" width="250"/>
 </div>
 
 <h1 align="center">Симуляция несжимаемой жидкости <a href="https://daniilshat.ru/" target="_blank"></a></h1>
