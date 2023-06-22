@@ -1,6 +1,6 @@
 <div id="header" align="center">
   <img src="https://github.com/devicons/devicon/blob/master/icons/numpy/numpy-original.svg" width="30"/>
-  <img scr="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" width="30"/>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/pycharm/pycharm-original.svg" width="30"/>
 </div>
 
 <div id="header" align="center">
