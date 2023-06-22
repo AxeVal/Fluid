@@ -11,7 +11,6 @@
 </div>
 
 <h1 align="center"> Симуляция несжимаемой жидкости <a href="https://daniilshat.ru/" target="_blank"> </a> </h1>
-<h2 align="center"> Сделали студенты НГУ </h2>
 <br>
 
 -----------------------------------
