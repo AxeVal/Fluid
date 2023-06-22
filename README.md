@@ -3,7 +3,7 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/pycharm/pycharm-original.svg" width="30"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" width="30"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Numba_logo.svg/1024px-Numba_logo.svg.png" width="30"/>
-  <img src="https://opencv.org/wp-content/uploads/2020/07/OpenCV_logo_black-2.png" width="30"/>
+  <img src="https://opencv.org/wp-content/uploads/2020/07/OpenCV_logo_black-2.png" width="25"/>
 </div>
 
 <div id="header" align="center">
