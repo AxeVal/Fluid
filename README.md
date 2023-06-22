@@ -1,6 +1,6 @@
 <div id="badges" align="center">
   <a href="https://vk.com/axeval">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/VK_Full_Logo_%282021-present%29.svg/2560px-VK_Full_Logo_%282021-present%29.svg.png/badge&logo=VK&logoColor=white" alt="axeval"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/VK_Full_Logo_%282021-present%29.svg/2560px-VK_Full_Logo_%282021-present%29.svg.png/badge&logoColor=white" alt="axeval"/>
   </a>
   <a href="https://vk.com/cocomaro">
     <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="cocomaro"/>
