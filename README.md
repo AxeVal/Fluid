@@ -1,5 +1,5 @@
 <div id="header" align="center">
-  <img src="http://looopism.tumblr.com/" width="100"/>
+  <img src="https://media.giphy.com/media/xTiN0GCrD3iqO4CRZm/giphy.gif" width="100"/>
 </div>
 
 <h1 align="center">Simulation incompressible fluid <a href="https://daniilshat.ru/" target="_blank"></a></h1>
