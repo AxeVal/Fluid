@@ -1,14 +1,4 @@
-<div id="badges" align="center">
-  <a href="https://vk.com/axeval">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/VK_Full_Logo_%282021-present%29.svg/2560px-VK_Full_Logo_%282021-present%29.svg.png/badge&logoColor=white" alt="axeval"/>
-  </a>
-  <a href="https://vk.com/cocomaro">
-    <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="cocomaro"/>
-  </a>
-  <a href="https://vk.com/ar1sto">
-    <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Ar1sto"/>
-  </a>
-</div>
+[![Vkontakte](https://img.shields.io/badge/-Vkontakte-003f5c?style=for-the-badge&logo=Vk)](https://vk.com/web.step)
 
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/xTiN0GCrD3iqO4CRZm/giphy.gif" width="100"/>
