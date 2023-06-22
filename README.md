@@ -1,4 +1,6 @@
-https://img.shields.io/badge/LinkedIn-blue
+<div id="header" align="center">
+  <img src="https://img.shields.io/badge/LinkedIn-blue" width="100"/>
+</div>
 
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/xTiN0GCrD3iqO4CRZm/giphy.gif" width="100"/>
