@@ -1,3 +1,8 @@
+# Связь с разработчиками
+>- Павел [![Ar1sto](https://img.shields.io/badge/-Vkontakte-003f5c?style=for-the-badge&logo=Vk)](https://vk.com/ar1sto) <br>
+>- Иван [![cocomaro](https://img.shields.io/badge/-Vkontakte-003f5c?style=for-the-badge&logo=Vk)](https://vk.com/cocomaro) <br>
+>- Валентин [![axeval](https://img.shields.io/badge/-Vkontakte-003f5c?style=for-the-badge&logo=Vk)](https://vk.com/axeval) <br>
+
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/xTiN0GCrD3iqO4CRZm/giphy.gif" width="100"/>
 </div>
@@ -22,10 +27,4 @@
 ## Список библиотек
 >- pygame - для отображения жидкости <br>
 >- numpy - для быстрой и эфективной работы с массивами <br>
-<br>
-
-## Список разработчиков
-> Павел [![Ar1sto](https://img.shields.io/badge/-Vkontakte-003f5c?style=for-the-badge&logo=Vk)](https://vk.com/ar1sto) <br>
-> Иван [![cocomaro](https://img.shields.io/badge/-Vkontakte-003f5c?style=for-the-badge&logo=Vk)](https://vk.com/cocomaro) <br>
-> Валентин [![axeval](https://img.shields.io/badge/-Vkontakte-003f5c?style=for-the-badge&logo=Vk)](https://vk.com/axeval) <br>
 <br>
