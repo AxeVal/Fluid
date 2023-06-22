@@ -8,8 +8,8 @@
   <img src="https://media.giphy.com/media/xTiN0GCrD3iqO4CRZm/giphy.gif" width="250"/>
 </div>
 
-<h1 align="center">Симуляция несжимаемой жидкости <a href="https://daniilshat.ru/" target="_blank"></a></h1>
-<h2><align="center">Студенты Новосибирского государственного университета</h2>
+<h1 align="center"> Симуляция несжимаемой жидкости <a href="https://daniilshat.ru/" target="_blank"> </a> </h1>
+<h2 align="center"> Сделали студенты НГУ </h2>
 <br>
 
 # Fluid
