@@ -5,7 +5,7 @@
 <h1 align="center">Симуляция несжимаемой жидкости <a href="https://daniilshat.ru/" target="_blank"></a></h1>
 <h2><align="center">Студенты Новосибирского государственного университета</h2>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Наша+команда:+Валентин,+Иван,+Павел)](https://git.io/typing-svg)
+[![Typing SVG](https://github.com/AxeVal/upprpo_team/tree/axeval?color=%2336BCF7&lines=Наша+команда:+Валентин,+Иван,+Павел)](https://git.io/typing-svg)
 <br>
 ------------------------------
 
