@@ -1,5 +1,5 @@
 <div id="header" align="center">
-  <img src="https://img.shields.io/badge/LinkedIn-blue" width="100"/>
+  <img src="https://vk.com/axeval" width="100"/>
 </div>
 
 <div id="header" align="center">
