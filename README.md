@@ -1,4 +1,8 @@
 <div id="header" align="center">
+  <img src="https://github.com/devicons/devicon/blob/master/icons/numpy/numpy-original.svg" width="20"/>
+</div>
+
+<div id="header" align="center">
   <img src="https://media.giphy.com/media/xTiN0GCrD3iqO4CRZm/giphy.gif" width="100"/>
 </div>
 
