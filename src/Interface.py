@@ -6,6 +6,7 @@ import cv2
 from Simulation import FluidCube
 from Properties import *
 
+
 def create_window():
     pg.init()
     pg.mixer.init()

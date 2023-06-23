@@ -1,4 +1,3 @@
-
 from Interface import create_window
 
 def main():

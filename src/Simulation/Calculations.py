@@ -3,6 +3,7 @@ from numba import njit
 
 from Properties import *
 
+
 def IX(x: int, y: int):
     return int(x + y * N)
 
