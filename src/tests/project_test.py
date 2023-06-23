@@ -4,14 +4,14 @@ import pytest
 import numpy as np
 
 sys.path.insert(1, 'src/')
-from Simulation.Calculations import project
+from src.Simulation.Calculations import project
 
 def arr_eq(arr1, arr2):
     return len(np.where(abs(arr1 - arr2) < 0.001))
 
 def assert_array_equal(arr1, arr2):
     assert arr_eq(arr1, arr2), "Arrays are not equal"
-    
+
 @pytest.fixture
 def input_data():
     N = 10
