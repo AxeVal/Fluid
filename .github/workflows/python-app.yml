@@ -37,6 +37,11 @@ jobs:
     - name: Test with pytest
       run: |
         python -m pytest
-    - name: Build a binary wheel
-      run: >-
+
+    - name: Build package and publish PYPI
+      env:
+        TWINE_USERNAME: ${{ secrets.PYPI_LOGIN }}
+        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+      run: |
         python setup.py sdist bdist_wheel
+        twine upload dist/*
