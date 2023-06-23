@@ -3,6 +3,7 @@ import numpy as np
 from .Calculations import diffuse, advect, project
 from Properties import *
 
+
 class FluidCube:
     def __init__(self, dt, diffusion, viscosity):
         self.dt   = dt        # шаг времени
