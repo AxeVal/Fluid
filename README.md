@@ -23,11 +23,11 @@
 
 ## Инструкция к скачиванию
 ### Github
-> тут ссылка
+> `https://github.com/AxeVal/Fluid`
 ### Pip
 > тут тоже ссылка
 ### Doker
-> и тут тоже ссылка
+> `https://hub.docker.com/r/ivansichkar/fluid`
 <br>
 
 -----------------------------------

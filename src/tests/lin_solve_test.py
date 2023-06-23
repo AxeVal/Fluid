@@ -4,7 +4,7 @@ import pytest
 import numpy as np
 
 sys.path.insert(1, 'src/')
-from src.Simulation.Calculations import lin_solve
+from Simulation.Calculations import lin_solve
 
 def assert_array_equal(arr1, arr2):
     assert np.array_equal(arr1, arr2), "Arrays are not equal"
