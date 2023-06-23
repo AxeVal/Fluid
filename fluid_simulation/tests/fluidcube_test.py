@@ -6,7 +6,7 @@ import numpy as np
 
 sys.path.insert(1, '.')
 sys.path.insert(1, 'src/')
-from src.Simulation import FluidCube
+from fluid_simulation.Simulation import FluidCube
 
 def arr_eq(arr1, arr2):
     return len(np.where(abs(arr1 - arr2) < 0.001))

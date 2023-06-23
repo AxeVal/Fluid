@@ -1,4 +1,4 @@
-from src import fluid_simulation_start
+from fluid_simulation import fluid_simulation_start
 
 def main():
     """

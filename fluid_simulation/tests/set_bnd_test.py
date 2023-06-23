@@ -5,7 +5,7 @@ import numpy as np
 
 sys.path.insert(1, '.')
 sys.path.insert(1, 'src/')
-from src.Simulation.Calculations import set_bnd
+from fluid_simulation.Simulation.Calculations import set_bnd
 
 def arr_eq(arr1, arr2):
     return len(np.where(abs(arr1 - arr2) < 0.001))

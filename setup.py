@@ -9,7 +9,7 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
 
 setup(
     name="FLUID_project_upprpo",
-    version='1.1.0',
+    version='1.1.1',
     author="VeLoR",
     author_email="",
     description="",
