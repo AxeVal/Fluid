@@ -14,7 +14,7 @@ setup(
     author_email="",
     description="",
     url = "https://github.com/AxeVal/Fluid",
-    long_description_content_type="",
+    long_description_content_type="text/markdown",
     long_description=long_description,
     packages=find_packages(),
     install_requires=['numpy', 'numba', 'opencv-python', 'pygame'],
