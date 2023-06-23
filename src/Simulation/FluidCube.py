@@ -1,7 +1,7 @@
 import numpy as np
 
 from .Calculations import diffuse, advect, project
-from Properties import *
+from ..Properties import *
 
 
 class FluidCube:

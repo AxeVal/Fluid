@@ -1,10 +1,10 @@
-from Interface import create_window
+from src import fluid_simulation_start
 
 def main():
     """
     Главная функция, запускающая симуляцию жидкости.
     """
-    create_window()
+    fluid_simulation_start()
 
 if __name__ == '__main__':
     main()

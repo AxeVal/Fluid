@@ -3,8 +3,8 @@ import sys
 import pygame as pg
 import cv2
 
-from Simulation import FluidCube
-from Properties import *
+from .Simulation import FluidCube
+from .Properties import *
 
 
 def create_window():
