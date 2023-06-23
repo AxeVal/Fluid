@@ -39,7 +39,7 @@ jobs:
         python -m pytest .\tests
     - name: Run PyInstaller
       run: |
-        python -m PyInstaller -w --onefile --add-data "assets;assets" src/main.py --name "RGB BoardDrawer"
+        python -m PyInstaller -w --onefile src/main.py --name "Fluid"
     - uses: actions/upload-artifact@v2
       with:
           name: release fluid
