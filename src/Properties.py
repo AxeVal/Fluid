@@ -1,14 +1,14 @@
 
-N = 100
-iter = 10
-SCALE = 8
+N = 100  # Размер сетки
+iter = 10  # Количество итераций при решении
+SCALE = 8  # Масштаб визуализации
 
-WIDTH = HEIGHT = N
-FPS = 50
-WINDOW_HEIGHT = WINDOW_WIDTH = WIDTH * SCALE
+WIDTH = HEIGHT = N  # Ширина и высота окна
+FPS = 50  # Количество кадров в секунду
+WINDOW_HEIGHT = WINDOW_WIDTH = WIDTH * SCALE  # Ширина и высота окна в пикселях
 
-BLACK = (0, 0, 0)
-WHITE = (255, 255, 255)
-RED = (255, 0, 0)
-GREEN = (0, 255, 0)
-BLUE = (0, 0, 255)
+BLACK = (0, 0, 0)  # Черный цвет
+WHITE = (255, 255, 255)  # Белый цвет
+RED = (255, 0, 0)  # Красный цвет
+GREEN = (0, 255, 0)  # Зеленый цвет
+BLUE = (0, 0, 255)  # Синий цвет

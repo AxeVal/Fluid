@@ -25,9 +25,15 @@
 ### Github
 > `https://github.com/AxeVal/Fluid`
 ### Pip
-> тут тоже ссылка
+> `https://pypi.org/project/FLUID-project-upprpo/`
+
+Или вы можете использовать pip для этого:
+> $ pip install FLUID-project-upprpo
 ### Doker
-> `https://hub.docker.com/r/ivansichkar/fluid`
+> `https://hub.docker.com/r/ivansichkar/fluid`  
+
+Или вы можете самостоятельно собрать docker-образ используя команду ниже:  
+> $ docker build -t fluid .
 <br>
 
 -----------------------------------

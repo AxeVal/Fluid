@@ -8,6 +8,13 @@ from Properties import *
 
 
 def create_window():
+    """
+    Создает окно для визуализации симуляции жидкости.
+
+    Примечания:
+        - Инициализирует Pygame, устанавливает режим отображения, создает объект
+          FluidCube для моделирования жидкости и запускает цикл обновления окна.
+    """
     pg.init()
     pg.mixer.init()
     sc = pg.display.set_mode((WIDTH*SCALE, HEIGHT*SCALE))
