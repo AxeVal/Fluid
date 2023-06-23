@@ -8,8 +8,8 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\\n" + fh.read()
 
 setup(
-    name="FLUID",
-    version='{{1.0.0}}',
+    name="FLUID_project_upprpo",
+    version='1.0.0',
     author="VeLoR",
     author_email="",
     description="",
@@ -20,7 +20,6 @@ setup(
     install_requires=['numpy', 'numba', 'opencv-python', 'pygame'],
     keywords=['pypi', 'cicd', 'python'],
     classifiers=[
-        "Development Status :: 1 - Working",
         "Programming Language :: Python :: 3",
         "Operating System :: Microsoft :: Windows"
     ]

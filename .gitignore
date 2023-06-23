@@ -3,3 +3,4 @@ dist/
 venv/
 build/
 Fluid.spec
+*.egg-info
