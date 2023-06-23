@@ -36,7 +36,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        python -m pytest .\tests
+        python -m pytest
     - name: Extract tag name
       id: tag
       run: echo ::set-output name=TAG_NAME::$(echo $GITHUB_REF | cut -d / -f 3)
