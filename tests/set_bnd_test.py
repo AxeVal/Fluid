@@ -4,7 +4,6 @@ import pytest
 import numpy as np
 
 sys.path.insert(1, 'src/')
-
 from src.Simulation.Calculations import set_bnd
 
 def arr_eq(arr1, arr2):
