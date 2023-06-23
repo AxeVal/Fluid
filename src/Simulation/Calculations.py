@@ -14,30 +14,30 @@ def set_bnd(b, x):
     x[-1, -1] = (x[-2, -1] + x[-1, -2]) / 2
     return x
 
-def advect(b, d, d0, Vx, Vy, dt):
-    dtx = dt * (N - 2)
-    dty = dt * (N - 2)
+def advect(b, d, d0, Vx, Vy, dt, NN = N):
+    dtx = dt * (NN - 2)
+    dty = dt * (NN - 2)
 
     tmp1 = dtx * Vx
     tmp2 = dty * Vy
-    i = np.arange(0, N)
-    j = np.arange(0, N)
+    i = np.arange(0, NN)
+    j = np.arange(0, NN)
     j, i = np.meshgrid(i, j)
 
     x = i - tmp1
     y = j - tmp2
     x[x < .5]     = 0.5
-    x[x > N + .5] = N + 0.5
+    x[x > N + .5] = NN + 0.5
     y[y < .5]     = 0.5
-    y[y > N + .5] = N + 0.5
+    y[y > N + .5] = NN + 0.5
     i0 = np.floor(x).astype(np.int32)
     i1 = i0 + 1
     j0 = np.floor(y).astype(np.int32)
     j1 = j0 + 1
-    i0 = np.clip(i0, 0, N - 1)
-    i1 = np.clip(i1, 0, N - 1)
-    j0 = np.clip(j0, 0, N - 1)
-    j1 = np.clip(j1, 0, N - 1)
+    i0 = np.clip(i0, 0, NN - 1)
+    i1 = np.clip(i1, 0, NN - 1)
+    j0 = np.clip(j0, 0, NN - 1)
+    j1 = np.clip(j1, 0, NN - 1)
 
     s1 = x - i0
     s0 = 1 - s1
@@ -50,7 +50,7 @@ def advect(b, d, d0, Vx, Vy, dt):
     d = set_bnd(b, d)
     return d
 
-@njit(parallel=True)
+@njit
 def lin_solve(b, x, x0, a, c):
     cRecip = 1.0 / c
     for k in range(iter):

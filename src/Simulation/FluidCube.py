@@ -37,8 +37,6 @@ class FluidCube:
         self.Vx = np.clip(advect(1, self.Vx, self.Vx0, self.Vx0, self.Vy0, self.dt), -5, 1)
         self.Vy = np.clip(advect(2, self.Vy, self.Vy0, self.Vy0, self.Vx0, self.dt), -5, 1)
 
-        
-
         self.Vx, self.Vy, self.Vx0, self.Vy0 = project(self.Vx, self.Vy, self.Vx0, self.Vy0)
 
         self.s = diffuse(0, self.s, self.density, self.diff, self.dt)
