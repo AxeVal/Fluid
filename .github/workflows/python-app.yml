@@ -37,7 +37,7 @@ jobs:
     - name: Test with pytest
       run: |
         coverage run -m pytest
-        coverage report
+        coverage report --omit='E:\Programming\upprpo_team\config-3.py,E:\Programming\upprpo_team\config.py'
 
     - name: Build package and publish PYPI
       env:
