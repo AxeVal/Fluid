@@ -5,7 +5,7 @@ from Properties import *
 
 
 class FluidCube:
-    def __init__(self, dt, diffusion, viscosity):
+    def __init__(self, dt, diffusion, viscosity, NN = N):
         """
         Инициализирует объект FluidCube.
 
@@ -18,18 +18,19 @@ class FluidCube:
             - Создает объект FluidCube с заданными параметрами и инициализирует
               все необходимые массивы для моделирования жидкости.
         """
+        self.NN = NN
         self.dt   = dt        # шаг времени
         self.diff = diffusion # диффузия, скорость жидкости в среде
         self.visc = viscosity # вязкость
 
-        self.s       = np.zeros((N, N))
-        self.density = np.zeros((N, N)) # плотность
+        self.s       = np.zeros((NN, NN))
+        self.density = np.zeros((NN, NN)) # плотность
 
-        self.Vx = np.zeros((N, N)) # текущая скорость по x
-        self.Vy = np.zeros((N, N)) # ...              по y
+        self.Vx = np.zeros((NN, NN)) # текущая скорость по x
+        self.Vy = np.zeros((NN, NN)) # ...              по y
 
-        self.Vx0 = np.zeros((N, N)) # предыдущая скорость по x
-        self.Vy0 = np.zeros((N, N)) # ...                 по y
+        self.Vx0 = np.zeros((NN, NN)) # предыдущая скорость по x
+        self.Vy0 = np.zeros((NN, NN)) # ...                 по y
 
     def addDensity(self, x: int, y: int, amount: float):
         """
@@ -71,15 +72,15 @@ class FluidCube:
         Примечания:
             - Выполняет последовательность шагов для обновления плотности и скорости жидкости.
         """
-        self.Vx0 = diffuse(1, self.Vx0, self.Vx, self.visc, self.dt)
-        self.Vy0 = diffuse(2, self.Vy0, self.Vy, self.visc, self.dt)
+        self.Vx0 = diffuse(1, self.Vx0, self.Vx, self.visc, self.dt, self.NN)
+        self.Vy0 = diffuse(2, self.Vy0, self.Vy, self.visc, self.dt, self.NN)
 
-        self.Vx0, self.Vy0, self.Vx, self.Vy = project(self.Vx0, self.Vy0, self.Vx, self.Vy)
+        self.Vx0, self.Vy0, self.Vx, self.Vy = project(self.Vx0, self.Vy0, self.Vx, self.Vy, self.NN)
 
-        self.Vx = np.clip(advect(1, self.Vx, self.Vx0, self.Vx0, self.Vy0, self.dt), -5, 1)
-        self.Vy = np.clip(advect(2, self.Vy, self.Vy0, self.Vy0, self.Vx0, self.dt), -5, 1)
+        self.Vx = np.clip(advect(1, self.Vx, self.Vx0, self.Vx0, self.Vy0, self.dt, self.NN), -5, 1)
+        self.Vy = np.clip(advect(2, self.Vy, self.Vy0, self.Vy0, self.Vx0, self.dt, self.NN), -5, 1)
 
-        self.Vx, self.Vy, self.Vx0, self.Vy0 = project(self.Vx, self.Vy, self.Vx0, self.Vy0)
+        self.Vx, self.Vy, self.Vx0, self.Vy0 = project(self.Vx, self.Vy, self.Vx0, self.Vy0, self.NN)
 
-        self.s = diffuse(0, self.s, self.density, self.diff, self.dt)
-        self.density = advect(0, self.density, self.s, self.Vx, self.Vy, self.dt)
+        self.s = diffuse(0, self.s, self.density, self.diff, self.dt, self.NN)
+        self.density = advect(0, self.density, self.s, self.Vx, self.Vy, self.dt, self.NN)

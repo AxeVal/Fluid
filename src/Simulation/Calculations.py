@@ -3,9 +3,8 @@ from numba import njit
 
 from Properties import *
 
-
-def IX(x: int, y: int):
-    return int(x + y * N)
+def IX(x: int, y: int, NN = N):
+    return int(x + y * NN)
 
 @njit
 def set_bnd(b, x):
@@ -115,7 +114,7 @@ def lin_solve(b, x, x0, a, c):
         x = set_bnd(b, x)
     return x
 
-def diffuse(b, x, x0, diff, dt):
+def diffuse(b, x, x0, diff, dt, NN = N):
     """
     Производит диффузию значения на двумерной сетке.
 
@@ -135,12 +134,12 @@ def diffuse(b, x, x0, diff, dt):
           с использованием функции lin_solve.
         - Граничные условия на массиве задаются с помощью функции set_bnd.
     """
-    a = dt * diff * (N-2) * (N-2)
+    a = dt * diff * (NN-2) * (NN-2)
     x = lin_solve(b, x, x0, a, 1+6*a)
     return x
 
 @njit
-def project(velocX, velocY, p, div):
+def project(velocX, velocY, p, div, NN = N):
     """
     Выполняет проекцию поля скорости на двумерной сетке.
 
@@ -149,6 +148,7 @@ def project(velocX, velocY, p, div):
         velocY: Компонента скорости по оси Y.
         p: Давление.
         div: Дивергенция.
+        NN: Размерность массива (по умолчанию равна N).
 
     Возвращает:
         velocX: Обновленная компонента скорости по оси X.
@@ -162,23 +162,23 @@ def project(velocX, velocY, p, div):
         - Обновляет компоненты скорости с учетом решенного давления.
         - Граничные условия на массивах задаются с помощью функции set_bnd.
     """
-    for j in range(1, N-1):
-        for i in range(1, N-1):
+    for j in range(1, NN-1):
+        for i in range(1, NN-1):
             div[i, j] = -0.5 * (velocX[i+1, j] -
                                     velocX[i-1, j] +
                                     velocY[i, j+1] -
-                                    velocY[i, j-1]) / N
+                                    velocY[i, j-1]) / NN
             p[i, j] = 0
     div = set_bnd(0, div)
     p = set_bnd(0, p)
     p = lin_solve(0, p, div, 1, 6)
 
-    for j in range(1, N-1):
-        for i in range(1, N-1):
+    for j in range(1, NN-1):
+        for i in range(1, NN-1):
             velocX[i, j] -= 0.5 * (p[i+1, j] - p[i-1, j] +
-                                   p[i, j+1] - p[i, j-1]) * N
+                                   p[i, j+1] - p[i, j-1]) * NN
             velocY[i, j] -= 0.5 * (p[i+1, j] - p[i-1, j] +
-                                   p[i, j+1] - p[i, j-1]) * N
+                                   p[i, j+1] - p[i, j-1]) * NN
     velocX = set_bnd(1, velocX)
     velocY = set_bnd(2, velocY)
     return velocX, velocY, p, div

@@ -4,3 +4,4 @@ venv/
 build/
 Fluid.spec
 *.egg-info
+.coverage
