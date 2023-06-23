@@ -37,7 +37,7 @@ jobs:
     - name: Test with pytest
       run: |
         coverage run -m pytest
-        coverage report --omit='/home/runner/work/Fluid/Fluid/config-3.py,/home/runner/work/Fluid/Fluid/config.py'
+        coverage report --omit='config-3.py,config.py'
 
     - name: Build package and publish PYPI
       env:
