@@ -3,6 +3,8 @@ import sys
 import pytest
 import numpy as np
 
+
+sys.path.insert(1, '.')
 sys.path.insert(1, 'src/')
 from src.Simulation import FluidCube
 
