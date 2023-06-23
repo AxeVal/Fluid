@@ -1,7 +1,7 @@
 import numpy as np
 from numba import njit
 
-from src.Properties import *
+from Properties import *
 
 def IX(x: int, y: int, NN = N):
     return int(x + y * NN)
